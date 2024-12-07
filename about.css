@@ -1,0 +1,224 @@
+.header {
+  background-color: #62c1d5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(
+    120deg,
+    #ffe57a 0%,
+    #c4e3e1 20%,
+    #ffe57a 40%,
+    #c4e3e1 60%,
+    #ffe57a 80%,
+    #c4e3e1 100%
+  );
+  padding: 4px 0;
+  position: fixed;
+  width: 100%;
+  top: 200px;
+  z-index: 5;
+  margin-top: -10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-list a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe57a;
+  min-width: 180px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive adjustments */
+.nav-list {
+  display: none; /* Hide nav-list by default on small screens */
+  flex-direction: column; /* Stack items vertically */
+  background-color: #ffe57a; /* Background for dropdown */
+  position: absolute;
+  top: 60px; /* Position below the navbar */
+  right: 0;
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for dropdown */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  z-index: 10; /* Ensure dropdown is above other elements */
+}
+
+/* Show the menu when active */
+.nav-list.active {
+  display: flex; /* Show nav-list when toggled */
+}
+
+.nav-list li {
+  position: relative;
+  margin: 0 20px;
+}
+
+.nav-list a:hover {
+  background-color: #d4f0f0;
+  color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+.logo img {
+  width: 250px;
+  height: auto;
+  margin-top: -5px;
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.dropdown-content a:hover {
+  background-color: #d4f0f0;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px; /* Size of the hamburger icon */
+  cursor: pointer;
+  margin-left: auto; /* Align to the right */
+  padding: 10px; /* Padding for the button */
+  color: #000; /* Color of the icon */
+}
+
+/* Large screen adjustments */
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex; /* Show nav-list as flex on larger screens */
+    flex-direction: row; /* Row layout for large screens */
+    position: static; /* Position static on larger screens */
+    background: none; /* No background for nav-list */
+    box-shadow: none; /* No shadow for nav-list */
+    width: auto; /* Width auto for nav-list */
+    padding: 0; /* No padding */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide hamburger on larger screens */
+  }
+}
+.about-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #62c1d5;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-layout {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 30px;
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(48, 48, 48, 0.827);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  text-align: center;
+  margin-top: 240px;
+}
+
+.about-layout p {
+  margin-bottom: 1.8em;
+  font-size: 1.1rem;
+  color: #000000;
+  text-align: justify;
+}
+
+.about-layout img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer {
+  background-color: #62c1d5;
+  color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo img {
+  max-width: 250px;
+  height: auto;
+  margin: 10px 0;
+}

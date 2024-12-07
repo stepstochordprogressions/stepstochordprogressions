@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominant Triad</title>
+    <link rel="stylesheet" href="major_triads_styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.1.3/Tone.js"></script>
+  </head>
+  <body id="major_dominant_triad">
+    <div class="header">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <button2 class="menu-toggle">☰</button2>
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <!-- Major Keys Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Major Keys</a>
+          <div class="dropdown-content">
+            <a href="major_tonic_triad.html">Tonic Triad</a>
+
+            <a href="major_supertonic_triad.html">Supertonic Triad</a>
+            <a href="major_mediant_triad.html">Mediant Triad</a>
+            <a href="major_subdominant_triad.html">Subdominant Triad</a>
+            <a href="major_dominant_triad.html">Dominant Triad</a>
+            <a href="major_submediant_triad.html">Submediant Triad</a>
+            <a href="major_leading_tone_triad.html">Leading Tone Triad</a>
+          </div>
+        </li>
+        <!-- Minor Keys Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Minor Keys</a>
+          <div class="dropdown-content">
+            <a href="minor_tonic_triad.html">Tonic Triad</a>
+            <a href="minor_supertonic_triad.html">Supertonic Triad</a>
+            <a href="minor_mediant_triad.html">Mediant Triad</a>
+            <a href="minor_subdominant_triad.html">Subdominant Triad</a>
+            <a href="minor_dominant_triad.html">Dominant Triad</a>
+            <a href="minor_submediant_triad.html">Submediant Triad</a>
+            <a href="minor_subtonic_triad.html">Subtonic Triad</a>
+            <a href="minor_leading_tone_triad.html">Leading Tone Triad</a>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2>Dominant Triad (V)</h2>
+
+    <div class="NavContainer">
+      <a href="major_keys.html" class="back-arrow">⬅</a>
+      <span class="hover-text">Click ⬅ to return to the major key page</span>
+    </div>
+
+    <div class="content">
+      <h3>
+        Soprano:&emsp;&emsp;&nbsp;\(\hat{5}\)&emsp;&emsp;\(\hat{7}\)&emsp;&emsp;\(\hat{2}\)
+      </h3>
+      <h3>
+        Bass: &emsp;&emsp;&emsp;&nbsp;&nbsp;\(\hat{5}\)&emsp;&emsp;\(\hat{7}\)
+      </h3>
+      <h3>Inversions:&emsp;&nbsp;&nbsp;V&emsp;&nbsp;&nbsp; V⁶</h3>
+      <p>
+        Doubling:
+        <span class="highlighted"
+          >Never double the leading tone \((\hat{7}\)).</span
+        >
+      </p>
+
+      <div
+        class="image-container"
+        data-note="B4,D4,G3,G2;D5,D4,B3,G3;G4,D4,G3,B2"
+      >
+        <img
+          src="assets/major images/C5.jpg"
+          alt="Chord Map"
+          class="chord-image"
+        />
+        <div class="overlay"></div>
+      </div>
+
+      <h3>
+        &nbsp;&emsp;&emsp;C:
+        V&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;V&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;V⁶
+      </h3>
+      <h3>
+        &emsp;&emsp;\((\hat{5}\)\(\hat{5}\)\(\hat{7}\)\(\hat{2}\))
+        &nbsp;&emsp;&emsp;\(\quad(\hat{5}\)\(\hat{7}\)\(\hat{2}\)\(\hat{2}\))
+        &nbsp;&emsp;&emsp;\(\quad(\hat{5}\)\(\hat{5}\)\(\hat{7}\)\(\hat{2}\))
+      </h3>
+    </div>
+
+    <div class="container">
+      <div>
+        <h4>Following Chord</h4>
+      </div>
+
+      <div class="buttons">
+        <button class="chord" id="I-button">
+          <img src="assets/chord/I.jpg" alt="I" />
+        </button>
+
+        <button class="chord" id="ii-button" disabled>ii</button>
+        <button class="chord" id="iii-button" disabled>iii</button>
+
+        <button class="chord" id="IV-button" disabled>
+          <img src="assets/chord/IV.jpg" alt="IV" />
+        </button>
+
+        <button class="chord" id="V-button" disabled>
+          <img src="assets/chord/V.jpg" alt="V" />
+        </button>
+
+        <button class="chord" id="vi-button">vi</button>
+        <button class="chord" id="vii-button" disabled>vii°⁶</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Contact:
+        <a href="mailto:susan.deghize@tamucc.edu">susan.deghize@tamucc.edu</a>
+      </p>
+      <p>
+        <a href="https://tamucc.pressbooks.pub/stepstomusictheory/"
+          >Steps to Music Theory</a
+        >
+        |
+        <a
+          href="https://www.stepstomusictheory.com/stepstoharmonicdictation/home"
+        >
+          Steps to Harmonic Dictation
+        </a>
+        |
+        <a href="about.html">About</a>
+        |
+        <a href="contact.html">Contact</a>
+      </p>
+      <div class="footer-logo">
+        <img
+          src="assets/STCP_Color-11-LOGGG.png"
+          alt="Steps to Chord Progressions Logo"
+        />
+        <p>&copy; 2024 Steps to Chord Progressions | All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
