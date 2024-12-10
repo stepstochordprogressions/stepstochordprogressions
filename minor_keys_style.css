@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-  margin-top: 560px;
+  margin-top: 42rem;
   padding: 20px;
   width: 40%;
+  max-width: 100%;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 1px 2px rgb(0, 0, 0);
@@ -21,11 +22,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.container:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -54,7 +50,7 @@ h2:hover {
 h3 {
   margin: 0;
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   padding: 8px 12px;
@@ -73,6 +69,7 @@ h3 {
 }
 
 .buttons {
+  padding-top:20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,21 +206,20 @@ button.chord {
 
 /* Responsive adjustments */
 .nav-list {
-  display: none; /* Hide nav-list by default on small screens */
-  flex-direction: column; /* Stack items vertically */
-  background-color: #ffe57a; /* Background for dropdown */
+  display: none; 
+  flex-direction: column; 
+  background-color: #ffe57a; 
   position: absolute;
-  top: 60px; /* Position below the navbar */
+  top: 60px;
   right: 0;
-  width: 100%; /* Full width */
-  padding: 10px; /* Padding for dropdown */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
-  z-index: 10; /* Ensure dropdown is above other elements */
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 10; 
 }
 
-/* Show the menu when active */
 .nav-list.active {
-  display: flex; /* Show nav-list when toggled */
+  display: flex; 
 }
 
 .nav-list li {
@@ -251,48 +247,55 @@ button.chord {
   background-color: #d4f0f0;
 }
 
-/* Hamburger menu styles */
+
 .menu-toggle {
   display: block;
   background: none;
   border: none;
-  font-size: 24px; /* Size of the hamburger icon */
+  font-size: 24px;
   cursor: pointer;
-  margin-left: auto; /* Align to the right */
-  padding: 10px; /* Padding for the button */
-  color: #000; /* Color of the icon */
+  margin-left: auto; 
+  padding: 10px;
+  color: #000; 
 }
 
-/* Large screen adjustments */
+/* Responsive Design */
 @media (min-width: 768px) {
+  
   .nav-list {
-    display: flex; /* Show nav-list as flex on larger screens */
-    flex-direction: row; /* Row layout for large screens */
-    position: static; /* Position static on larger screens */
-    background: none; /* No background for nav-list */
-    box-shadow: none; /* No shadow for nav-list */
-    width: auto; /* Width auto for nav-list */
-    padding: 0; /* No padding */
+    flex-direction: row;
+    background-color: #ffe57a;
+    position: static;
+    width: auto;
+    display: flex;
+    padding: 0;
+    background: none;
+    box-shadow: none;
   }
 
   .menu-toggle {
-    display: none; /* Hide hamburger on larger screens */
+    display: none; 
   }
 }
 
 .footer {
   position: absolute;
-  margin-bottom: -90rem;
+  bottom: 0;
+  margin-bottom: -550px;
+
+  margin-top: 10rem;
   width: 100%;
   background-color: #62c1d5;
   color: #f3f3f3;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .footer p {
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
 .footer a {
@@ -307,5 +310,6 @@ button.chord {
 .footer-logo img {
   max-width: 250px;
   height: auto;
-  margin: 10px 0;
+  margin: 8px 0;
 }
+
