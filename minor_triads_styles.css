@@ -2,7 +2,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: flex-end;
-  align-items: center;c
+  align-items: center;
   height: 100vh;
   margin: 0;
   background: white;
@@ -264,10 +264,10 @@ h2:hover {
 .content {
   padding: 20px;
   width: 100%;
-  margin-left: 80px;
-  margin-top: 50rem; 
-  font-family: 'Times New Roman', Times, serif; 
-  font-size: 20px; 
+  margin-left: 60px;
+  margin-top: 48rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 .content h3 {
   font-size: 20px; /* Default font size */
@@ -347,7 +347,7 @@ h2:hover {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  background-color: #ff0ca6;
+  background-color: #ff0ca6;;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -381,7 +381,7 @@ h2:hover {
   border-radius: 25px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   margin-right: 200px;
-  margin-top: 48rem;
+  margin-top: 45rem;
 }
 
 /* Responsive Styles */
@@ -739,7 +739,7 @@ button#vii1-mrbutton:disabled:hover img {
 
 .soundButton-container {
 
-  right: -0.8rem;
+  right: -1rem;
   margin-top: 1rem;
 }
 
@@ -749,4 +749,3 @@ button#vii1-mrbutton:disabled:hover img {
   height: 2rem; 
  }
 }
-
