@@ -561,7 +561,6 @@ button.chord {
 
 #major_mediant_triad #I-button::after,
 #major_mediant_triad #iii-button::after,
-#major_mediant_triad #vi-button::after,
 #major_mediant_triad #vii-button::after {
   content: "╳";
   position: absolute;
@@ -711,3 +710,4 @@ button#V-button:disabled:hover img {
   height: 2rem; 
  }
 }
+
